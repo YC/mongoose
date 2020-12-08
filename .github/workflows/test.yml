@@ -29,8 +29,9 @@ jobs:
           mongod --version
           mkdir ./test/typescript/node_modules
           ln -s `pwd` ./test/typescript/node_modules/mongoose
+          echo `pwd`/mongodb-linux-x86_64-ubuntu1604-4.0.2/bin >> $GITHUB_PATH
 
-      - run: PATH=`pwd`/mongodb-linux-x86_64-ubuntu1604-4.0.2/bin/:$PATH npm test
+      - run:  npm test
 
   lint:
     runs-on: ubuntu-latest
