@@ -169,7 +169,9 @@ describe('connections:', function() {
     describe('connection events', function() {
       beforeEach(function() {
         this.timeout(60000);
-        return server.start();
+        return server.stop().then(function () {
+          return server.start();
+        });
       });
 
       afterEach(function() {
