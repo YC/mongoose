@@ -48,7 +48,7 @@ jobs:
         with:
           node-version: 14
 
-      - run: npm install eslint
+      - run: npm install
 
       - name: Linter
         run: npm run lint
