@@ -54,7 +54,7 @@
     "marked": "1.1.1",
     "mocha": "5.x",
     "moment": "2.x",
-    "mongodb-topology-manager": "1.0.11",
+    "mongodb-topology-manager": "2.1.0",
     "mongoose-long": "0.2.1",
     "node-static": "0.7.11",
     "object-sizeof": "1.3.0",
