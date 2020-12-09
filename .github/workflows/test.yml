@@ -19,7 +19,7 @@ jobs:
 
       - name: Setup
         run: |
-          wget http://downloads.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1604-4.0.2.tgz
+          wget -q http://downloads.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1604-4.0.2.tgz
           tar xf mongodb-linux-x86_64-ubuntu1604-4.0.2.tgz
           mkdir -p ./data/db/27017 ./data/db/27000
           printf "\n--timeout 8000" >> ./test/mocha.opts
